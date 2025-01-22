@@ -1,32 +1,16 @@
-----CONFIGURACION PARA CODIGO QR----
+Aplicación clon de preguntados ustilizando un micro-framework MVC de desarrollo interno y base de datos.
 
-    Para que funcione lo de qr, hay que realizar cambios en el archivo "php.ini" dentro de xampp.
-    Dentro del mismo buscar "extensions=gd" y eliminar el ";"
-
-
-Pregunlam G3 pasos:
-
-1) Descomprimir en htdocs
-2) Cambiar la el DocumentRoot y Directory de Apache en httpd.conf a:
-					DocumentRoot "C:\xampp\htdocs\Pregunlam"
-					<Directory "C:\xampp\htdocs\Pregunlam">
-3) Reiniciar Apache
-
-
-
----HABILITAR EXTENSION ZIP---
-Para instalar el phpunit con composer, deberan ir al archivo php.ini dentro de
-xampp , y en el mismo deberan elimnar el primer ";" de "extensions=zip"
-
-
----ENTORNO DE PRUEBAS---
-
-define('TEST_ENV', true);
-
-Esto lo que hace en los test es definir los entornos de pruebas para asi evitar el llamado
-de views utilizado el presenter. El mismo se define dentro del mismo metodo de la
-clase a la que estamos llamando
-y en el test mismo. (Ejemplo en respuestaController)
-
-
-
+Tareas que desempeñé en el proyecto:
+	- Implementar la autenticación de una nueva cuenta por medio de un código.
+	- Implementar el modelo de negocio para jugar partidas.
+	- Implementar ranking de usuarios según puntaje de mejor partida.
+	- Implementar lógica de negocio anti-cheat para impedir que la pregunta cambie al refrescar la pantalla.
+	- Implementar límite de tiempo para responder una pregunta del lado del servidor.
+	- Desarrollar algoritmo que garantice la aleatoriedad de las preguntas.
+	- Desarrollar algoritmo que garantice que un jugador no reciba una pregunta ya contestada.
+	- Implementar sistema de niveles para el jugador y de dificultad para las preguntas.
+	- Desarrollar lo relacionado a las vistas de editor, ABM de las preguntas.
+	- Generar documentos PDF utilizando DOMPDF.
+	- Enviar correos de confirmación utilizando PHPMailer.
+	- Implementar mapa con coordenadas predeterminadas y seleccionables con OpenStreetMap
+	- Validar el formato de texto del lado del servidor desarrollando la clase helper InputFormatValidator utilizando expreciones regulares.
